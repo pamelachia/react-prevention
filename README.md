@@ -10,7 +10,6 @@ A layer that stops events from [propagating](https://developer.mozilla.org/en-US
 - it looks good
 - some libraries don't allow you to handle the events, this is the last resort
 
-
 ## Examples
 
 ### Event prevention
@@ -32,7 +31,7 @@ You can turn the wrapper into an inline element with the `inline` prop.
 ```jsx
 <span onClick={this.wontHappen}>
     <Prevention click inline>
-        <span dblClick={this.willHappen}>Click Me</Button>
+        <span onClick={this.willHappen}>Click Me</span>
     </Prevention>
 </span>
 ```
